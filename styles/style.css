@@ -42,7 +42,7 @@ body, html {
   right: 600px;
   transform: translateX(100%);
   opacity: 0;
-  animation: slideIn 1s forwards;
+   animation: slideIn 3s forwards; 
   font-weight: 600;
   z-index: 1; 
   
