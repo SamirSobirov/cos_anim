@@ -85,7 +85,6 @@ body, html {
   }
 }
 
-/* Responsive styles for screens 1000px and smaller */
 @media (max-width: 1000px) {
   .cosmos_title {
     font-size: 28px;
