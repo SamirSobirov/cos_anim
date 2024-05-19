@@ -30,26 +30,21 @@ body, html {
   display: block; 
 }
 
-
 .cosmos_title {
   font-size: 42px;
   font-weight: bold;
   color: #fff;
-  margin: 20px 0 0; 
-
   position: absolute;
   bottom: 620px;
-  right: 600px;
+  text-align: center;
+  padding-left: 25%;
   transform: translateX(100%);
   opacity: 0;
-   animation: slideIn 3s forwards; 
+  animation: slideIn 3s forwards; 
   font-weight: 600;
   z-index: 1; 
-  
-  text-shadow: 0 0 10px black; /* добавляем тень текста */
+  text-shadow: 0 0 10px black;
 }
-
-
 
 @keyframes slideIn {
   0% {
@@ -61,6 +56,7 @@ body, html {
     opacity: 1;
   }
 }
+
 .rocket {
   position: absolute;
   bottom: 250px; 
@@ -78,17 +74,6 @@ body, html {
   display: block;
 }
 
-@keyframes slideInText {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 @keyframes slideInRocket {
   0% {
     transform: translateY(100%) translateX(0);
@@ -97,5 +82,30 @@ body, html {
   100% {
     transform: translateY(0) translateX(-600px); 
     opacity: 1;
+  }
+}
+
+/* Responsive styles for screens 1000px and smaller */
+@media (max-width: 1000px) {
+  .cosmos_title {
+    font-size: 28px;
+    bottom: 280px;
+    padding-left: 20%;
+  }
+
+  .rocket {
+    bottom: 150px; 
+    right: -100px;
+    animation: slideInRocket 5s forwards; 
+  }
+
+  .rocket_photo {
+    width: 200px;
+    height: 50px;
+  }
+
+  .image-wrapper {
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
